@@ -1,10 +1,14 @@
-describe('feature 01', () => {
-  it('Acessar o site', () => {
+describe('Acessar funcionalidades do site', () => {
+  beforeEach(() => {
+    cy.exec('npm cache clear --force')
     cy.visit('/')
-    cy.contains('Aceitar Todos').click()
   })
 
-  it('Acessar o menu de opções', () => {
-    cy.get('.style-module--sideMenuToggle--GZFE-')
+  it('Aceitar termos de aceite', () => {
+    cy.contains('Aceitar Todos').should('be.visible').click()
+  })
+
+  it('Acessar aumente suas vendas', () => {
+    cy.contains('Aumente suas vendas').should('be.visible')
   })
 })

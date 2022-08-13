@@ -3,7 +3,8 @@
     "cypress": "^10.4.0"
   },
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "npx cypress run --record --key be981497-9106-44da-9b0a-2ee88915e62f"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run -- --spec 'path/to/files/*.cy.js' --headless",
+    "cy:ci": "npx cypress run --record --key be981497-9106-44da-9b0a-2ee88915e62f"
   }
 }
