@@ -1,2 +1,2 @@
 # cypress
-poc de testes em javascript com cypress
+poc de testes em javascript
