@@ -6,7 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://pagar.me',
-    projectId: "87zu82",
-    chromeWebSecurity: false
-  },
-});
+    projectId: "87zu82", 
+    chromeWebSecurity: false,
+  }
+})
